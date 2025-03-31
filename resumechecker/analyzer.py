@@ -10,7 +10,7 @@ def extractText(padf_path):
             text+=page.extract_text()+'\n'
     return text.strip()
 
-grok_key='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'
+grok_key='api_key'
 
 def analyze_resume_with_llm(resume_text:str,job_description:str)->dict:
     prompt = f"""
